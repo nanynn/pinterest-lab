@@ -8,14 +8,14 @@ var gulp = require('gulp'),
 	webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js', 'assets/js/*.js'])
+	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery-modal/jquery.modal.js' ,'assets/js/*.js'])
 	.pipe(concat('script.js'))
 	//carpeta dist
 	.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('style', function(){
-	gulp.src([ 'assets/sass/main.scss'])
+	gulp.src([ 'assets/sass/main.scss', 'node_modules/jquery-modal/jquery.modal.css'])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(minifyCSS())
 	.pipe(concat('style.min.css'))
