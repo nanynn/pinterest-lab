@@ -9,7 +9,7 @@ nav{
 	top:0;
 	width: 100%;
 	height: 80px;
-	z-index:100;
+	z-index:1;
 	background-color: $white;
 	border-bottom: 1px solid $grey;
 	
@@ -33,6 +33,10 @@ nav{
 		}
 	}
 		
+}
+
+a.cont-modal{
+	text-decoration:none;
 }
 
 .pines__contenedor{
@@ -68,37 +72,8 @@ nav{
 	}
 }
 
-.modal{
-	width: 100%;
-	height:100%;
-	background: rgba(0,0,0,.1);
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: none;
-
-	.ventana{
-		width: 180px;
-		height:180px;
-		text-align: center;
-		position: absolute;
-		top: 20%;
-		left: -90px;
-		margin-left: 50%;
-	}
-	.open-modal{
-		text-decoration:none;
-	}
-	.close-modal{
-		width:20px;
-	  padding:2px;
-	  background:#f00;
-	  color:#fff;
-	  float:right;
-	  font-weight:bold;
-	  font-family:Arial;
-	  cursor:pointer;
-	}
-
+.modal__contenedor{
+	z-index: 3;
 }
+
 
