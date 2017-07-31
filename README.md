@@ -30,6 +30,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 * Dependencias de Producción 
 	>JQuery ~v.3.1.1 
 
-Clonar repositorio 
+**Clonar repositorio**
 - Posicionado en nuestro proyecto hacer corre npm install para descargar e instalar todas las dependencias utilizadas. 
 - Correr gulp para que se realizen las tareas especificadas.	
