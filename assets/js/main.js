@@ -19,7 +19,7 @@ $(document).ready(function() {
 			infoPines.click(function(){
 				var pin = infoPines.data('pin');
 				var modalInfo = '<div class="modal__contenedor">'+
-									'<img src="dist/img/'+ pin.id +'.jpg" class="img-modal">'+
+									'<img src="dist/img/'+ pin.id +'.jpg">'+
 									'<h3 class="modal__contenedor--title">' + pin.title + '</h3>'+
 									'<h4 class="modal__contenedor--description">'+ pin.description+'</h4>'+
 									'<h5 class="modal__contenedor--username"><i class="fa fa-user-circle" aria-hidden="true"></i>'+pin.username+ '</h5>'+

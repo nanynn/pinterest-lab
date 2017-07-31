@@ -4,76 +4,123 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
-nav{
+#menu{
+	background-color:$white;
 	position: fixed;
 	top:0;
+	left:0;
 	width: 100%;
-	height: 80px;
-	z-index:1;
-	background-color: $white;
 	border-bottom: 1px solid $grey;
-	
-	.fa-pinterest{
-		color: $rojo;
-		text-align: center;
+	justify-content: center;
+	.flex-container{
+		display: flex;
 	}
-	input{
-		border: none;
-		background-color: $grey;
-		padding: 2%;
-		border-radius: 0.5em;
-		width: 100%;
-		outline: 0;
-	}
-	.fa-user, .fa-bars, .fa-commenting{
+	.flex-container__link{
+		padding: 21px;
+		display:inline-block;
+		text-decoration:none;
 		color: $grey-icon;
-		text-align: center;
 		&:hover{
 			@include hoverIcon();
 		}
 	}
 		
+	input{
+		background-color: $grey;
+		outline:0;
+		border:none;
+		padding: 10px;
+		border-radius: 1em;
+		width: 70vw;
+	}
+		@media (max-width:668px){
+			width: 100%;
+			.fa-user, .fa-bars, .fa-commenting{
+				display:none;
+			}
+		}
+	.fa-pinterest{
+		color: $rojo;
+	}
 }
 
 a.cont-modal{
-	text-decoration:none;
-}
+	text-decoration:none!important;
 
-.pines__contenedor{
-	margin: 0 auto;
-	display:inline-block;
-	width: 25%;
-	.pines__tarjeta{
-		border-radius: 2px;
-		margin: 15px;
-		&:hover{
-			background-color: $grey;
-			border-radius: 1em;
-			padding: 5%;
+	.pines__contenedor{
+		margin: 0 auto;
+		display:inline-block;
+		width: 25%;
+
+	@media (max-width: 668px){
+		width: 50%;
+	}	
+		.pines__tarjeta{
+			border-radius: 2px;
+			margin: 15px;
+			&:hover{
+				background-color: $grey;
+				border-radius: 1em;
+				padding: 5%;
+			}
+				img{
+					width:100%;
+					border-radius: 1em;
+				}
+				.pines__tarjeta--title{
+					color: $black;
+					text-align:left;
+					padding: 5px 10px;
+					font-size: 18px;
+				}
+				.pines__tarjeta--description{
+					color:$grey-icon;
+					padding: 5px;
+					font-size: 14px;
+
+				}
+				.pines__tarjeta--username{
+					color: $rosa;
+					padding: 5px;
+					font-size: 14px;
+					text-align:center;
+				}
+				.pines__tarjeta--hashtag{
+					text-align: center;
+					@include htg();
+				}
 		}
-			img{
-				width:100%;
-				border-radius: 1em;
-			}
-			.pines__tarjeta--title{
-				text-align:left;
-				padding: 5px 10px;
-			}
-			.pines__tarjeta--username{
-				color: $rosa;
-				padding: 5px;
-			}
-			.pines__tarjeta--hashtag{
-				color:$grey-icon;
-				text-align: left;
-				padding: 5px;
-				border-radius: 1em;
-			}
 	}
 }
 
 .modal__contenedor{
 	z-index: 3;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	img{
+		width: 100%;
+		border-radius: 1em;
+	}
+	.modal__contenedor--title{
+		padding: 5px;
+		color:$black;
+		font-size: 18px;
+	}
+	.modal__contenedor--description{
+		color:$grey-icon;
+		padding: 5px;
+		font-size: 14px;
+	}
+	.modal__contenedor--username{
+		color: $rosa;
+		padding: 5px;
+		font-size: 14px;
+	}
+	.modal__contenedor--hashtag{
+		text-align: center;
+		@include htg();
+	}
 }
 
 

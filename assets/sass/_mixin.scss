@@ -6,3 +6,12 @@
 	text-align: center;
 	line-height: 30px;
 }
+
+@mixin htg(){
+	background-color:$rosa-claro;
+	color: $white;
+	padding: 8px;
+	font-size: 12px;
+	display:inline-block;
+	border-radius: 1em;
+}
