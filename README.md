@@ -26,6 +26,7 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 	>Gulp-Minify-CSS ~v.1.2.4 
 	>Gulp-Sass ~v.3.0.0 
 	>Gulp-Uglify ~v.2.0.0
+	>Gulp-Webserver ~0.9.1
 
 * Dependencias de Producción 
 	>JQuery ~v.3.1.1 
